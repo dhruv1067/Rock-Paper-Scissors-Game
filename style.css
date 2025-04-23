@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    text-align: center;
 }
 
 h1{
@@ -37,4 +38,29 @@ img{
     justify-content: center;
     gap: 5rem;
     margin-top: 5rem;
+}
+
+.scoreboard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    margin-top: 3rem;
+    gap: 5rem;
+}
+
+#user-score, #comp-score{
+    font-size: 4rem;
+}
+
+.msg-container{
+    margin-top: 5rem;
+}
+
+.msg{
+    background-color: #081b31;
+    color: #fff;
+    height: 3rem;
+    font-size: 2.5rem;
+    display: inline;
 }
