@@ -2,7 +2,7 @@ let userScore = 0;
 let compScore = 0;
 
 const choices = document.querySelectorAll(".choice");
-const msg = document.querySelector("#msg");
+const result = document.querySelector(".msg");
 
 const userScorePara = document.querySelector("#user-score");
 const compScorePara = document.querySelector("#comp-score");
@@ -14,20 +14,21 @@ const genCompChoice = () => {
 };
 
 const drawGame = () => {
-    msg.innerText = "Game was Draw.";
+    result.innerText = "Game was Draw.";
+    result.style.backgroundColor = "#081b31";
 };
 
 const showWinner = (userWin, userChoice, compChoice) => {
     if(userWin){
         userScore++;
         userScorePara.innerText = userScore;
-        msg.innerText = "You Win!";
-        msg.style.backgroundColor = "green" ;
+        result.innerText = "You Win!";
+        result.style.backgroundColor = "green" ;
     }else{
         compScore++;
         compScorePara.innerText = compScore;
-        msg.innerText = `You Lose.`;
-        msg.style.backgroundColor = "red";
+        result.innerText = `You Lose.`;
+        result.style.backgroundColor = "red";
     }
 };
 
